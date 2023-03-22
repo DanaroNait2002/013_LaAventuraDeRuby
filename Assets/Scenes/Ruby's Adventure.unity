@@ -459,6 +459,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1479675875}
     m_Modifications:
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -1306,6 +1310,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -1813,6 +1821,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -2125,6 +2137,10 @@ PrefabInstance:
     - target: {fileID: 2653033685964256992, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: vertical
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
@@ -2588,6 +2604,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -3046,6 +3066,10 @@ PrefabInstance:
     - target: {fileID: 2653033685964256992, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: changeTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
@@ -4239,6 +4263,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1479675875}
     m_Modifications:
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -4986,6 +5014,10 @@ PrefabInstance:
     - target: {fileID: 2653033685964256992, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: changeTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
@@ -5857,6 +5889,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1479675875}
     m_Modifications:
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
       objectReference: {fileID: 0}
@@ -6304,6 +6340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1479675875}
     m_Modifications:
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
       value: RobotEnemy
@@ -19129,6 +19169,10 @@ PrefabInstance:
     - target: {fileID: 2653033685964256992, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: changeTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8717007919113663091, guid: 5a683a09daa1dec499695f6545e026f7, type: 3}
       propertyPath: m_Name
