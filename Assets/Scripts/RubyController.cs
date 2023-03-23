@@ -24,9 +24,6 @@ public class RubyController : MonoBehaviour
     [Range(3f, 7f)]
     public float speed = 4.0f;
 
-    private float maxSpeed = 5.0f;
-    private float minSpeed = 3.0f;
-
     [Header("Shooting")]
     public GameObject projectilePrefab;
     public bool canLaunch = true;
@@ -50,44 +47,17 @@ public class RubyController : MonoBehaviour
     
     #region START, UPDATE Y FIXED UPDATE
 
-    private void Awake()
-    {
-        if (RubyController.instance == null)
-        {
-            RubyController.instance = this;
-            enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
     void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
          
-        Application.targetFrameRate = 144;
-         
-        gameOverPanel.SetActive(false);
-        winPanel.SetActive(false);
         AudioListener.pause = false;
-        Time.timeScale = 1;
-
-        StartCoroutine(ControlsPanel());
-        IEnumerator ControlsPanel()
-        {
-            yield return new WaitForSeconds(5);
-            controlsCanvas.enabled = false;
-        }
     }
- 
-     // Update is called once per frame
+
     void Update()
     {
-        
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         Vector2 move = new Vector2(horizontal, vertical);
@@ -106,30 +76,6 @@ public class RubyController : MonoBehaviour
             }
         }
         
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("Escape");
-            Application.Quit();
-        }
-        if(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.C))
-        {
-            Launch();
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("Resetting scene");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        if (Input.GetKey(KeyCode.LeftShift) && speed <= maxSpeed)
-        {
-            print("Sprinting");
-            speed += 4f * Time.deltaTime;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            speed = minSpeed;
-        }
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
             lookDirection.Set(move.x, move.y);
@@ -145,20 +91,6 @@ public class RubyController : MonoBehaviour
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
                 isInvincible = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, 
-                lookDirection, 1.5f, LayerMask.GetMask("NPC"));
-            if (hit.collider != null)
-            {
-                NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
-                if (character != null)
-                {
-                    character.DisplayDialogue();
-                }
-            }
         }
     }
  
@@ -200,7 +132,6 @@ public class RubyController : MonoBehaviour
             audioSource.PlayOneShot(damagedSound);
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     void Launch()
