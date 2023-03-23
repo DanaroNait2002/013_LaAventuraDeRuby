@@ -79,7 +79,7 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
 
-        RubyController.instance.FixedEnemy(); 
+        //RubyController.instance.FixedEnemy(); 
         hitEffect.Play();
         AudioSource.PlayClipAtPoint(fixSound, transform.position);
         _audioSource.Stop();
